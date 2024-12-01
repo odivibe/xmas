@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wishes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Curtain GIF Overlay -->
+    <div id="curtain">
+        <img src="curtain.gif" alt="Curtain Animation">
+    </div>
+
+    <!-- Main App Content -->
+    <div id="app" class="hidden">
+        <div class="container">
+            <h1 class="title">Create Your Christmas Wishes</h1>
+            <form id="wishForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="message">Choose a Christmas Message:</label>
+                <select id="message" name="message" required>
+                    <option value="Merry Christmas and Happy New Year!">Merry Christmas and Happy New Year!</option>
+                    <option value="Wishing you a season full of love, joy, and peace.">Wishing you a season full of love, joy, and peace.</option>
+                    <option value="May your holidays be merry and bright!">May your holidays be merry and bright!</option>
+                    <option value="Have a wonderful holiday season with your loved ones.">Have a wonderful holiday season with your loved ones.</option>
+                    <option value="Wishing you all the happiness your holiday can hold!">Wishing you all the happiness your holiday can hold!</option>
+                </select>
+
+                <label for="customMessage">Or enter your own message:</label>
+                <textarea id="customMessage" name="customMessage" rows="4" placeholder="Write your own Christmas message..."></textarea>
+
+                <button type="submit" class="btn">Generate My Wish</button>
+            </form>
+        </div>
+
+        <!-- Music Player Controls -->
+        <div id="musicControls">
+            <button id="playMusic" class="btn">Play Music</button>
+            <button id="pauseMusic" class="btn">Pause Music</button>
+        </div>
+
+        <!-- Enable Sound Button -->
+        <div id="enableSound" style="display: none;">
+            <button id="enableSoundBtn" class="btn">Click to Enable Sound</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
